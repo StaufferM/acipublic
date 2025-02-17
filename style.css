@@ -292,9 +292,31 @@ header {
 }
 
 @media (max-width: 768px) {
-    .info-section .info-column {
-        flex: 1 1 100%; /* Stack columns vertically on smaller screens */
+    /* .info-section .info-column {
+        flex: 1 1 100%; /* Stack columns vertically on smaller screens 
         max-width: 100%;
+    } */
+    .info-section .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info-section .col-3 {
+        width: 50%; /* First row: Logo + Quick Links */
+        padding: 10px;
+    }
+
+    .info-section .col-3:nth-child(3),
+    .info-section .col-3:nth-child(4) {
+        width: 100%; /* Second row: Blog Posts + Estimate Button */
+    }
+
+    .info-section .col-3:nth-child(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

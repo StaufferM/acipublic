@@ -447,3 +447,7 @@ header {
         max-width: 100%;
     }
 }
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
